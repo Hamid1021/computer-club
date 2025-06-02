@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>کامپیوتر کلاب</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+        <link href="./output.css" rel="stylesheet" />
+    </head>
+    <body dir="rtl" lang="fa" class="text-gray-800">
+        <div class="min-h-screen flex flex-col">
+            <div id="TopBanner" class="animate-fade-in-up" style="animation-delay: 0.1s">
+                <p>
+                    <i class="fas fa-bullhorn ml-2 animate-pulse-custom"></i>
+                    به کامپیوتر کلاب خوش آمدید! آخرین اخبار و رویدادها را دنبال کنید.
+                </p>
+            </div>
+
+            <header id="header" class="animate-fade-in-up">
+                <div class="container mx-auto flex items-center justify-between">
+                    <div class="flex items-center">
+                        <img src="./img/icon/logo.svg" alt="لوگو" />
+                        <div class="flex flex-col">
+                            <h1 class="text-2xl md:text-3xl font-extrabold text-gray-800">کامپیوتر کلاب</h1>
+                            <p class="font-extrabold text-zinc-700">دانشگاه آزاد اسلامی واحد اسلامشهر</p>
+                        </div>
+                        <nav id="desktop-nav" class="hidden md:flex flex-wrap justify-end gap-x-2 gap-y-2 text-base md:text-lg font-medium text-blue-600">
+                            <a href="#">صفحه اصلی</a>
+                            <a href="#">درباره ما</a>
+                            <a href="#">اخبار</a>
+                            <a href="#">تماس با ما</a>
+                        </nav>
+                    </div>
+
+                    <a id="register-desktop" href="#" class="focus:ring-opacity-75 text-gray-950"> ورود / ثبت نام </a>
+
+                    <button id="hamburger-button" class="md:hidden text-gray-950 text-3xl focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <nav id="mobile-nav" class="md:hidden flex hidden">
+                    <a href="#">صفحه اصلی</a>
+                    <a href="#">درباره ما</a>
+                    <a href="#">اخبار</a>
+                    <a href="#">تماس با ما</a>
+                    <a id="register-mobile" href="#" class="">ورود / ثبت نام</a>
+                </nav>
+            </header>
+
+            <main class="flex-grow items-center px-4 py-8 space-y-10">
+                <section id="ScientificAssociations" class="animate-fade-in-up duration-1000">
+                    <h2 class="text-3xl font-bold text-right mb-8 text-gray-800 border-b-2 border-yellow-500 pb-4 mx-auto xl:mx-[150px]">انجمن‌های علمی دانشجویی</h2>
+                    <div class="ScientificAssociations">
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
+                            <div class="bg-blue-600 ring-blue-400 scientific-associations-item">کامپیوتر</div>
+                            <div class="bg-green-600 ring-green-400 scientific-associations-item">برق</div>
+                            <div class="bg-red-600 ring-red-400 scientific-associations-item">مکانیک</div>
+                            <div class="bg-purple-600 ring-purple-400 scientific-associations-item">عمران</div>
+                            <div class="bg-yellow-600 ring-yellow-400 scientific-associations-item">شیمی</div>
+                            <div class="bg-teal-600 ring-teal-400 scientific-associations-item">معماری</div>
+                            <div class="bg-pink-600 ring-pink-400 scientific-associations-item">پزشکی</div>
+                            <div class="bg-indigo-600 ring-indigo-400 scientific-associations-item">هنر</div>
+                            <div class="bg-orange-600 ring-orange-400 scientific-associations-item">کشاورزی</div>
+                            <div class="bg-lime-600 ring-lime-400 scientific-associations-item">مدیریت</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Gools" class="animate-fade-in-up duration-1000">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center border-b-2 border-yellow-500 pb-4 flex justify-between items-center mx-auto xl:mx-[150px]">
+                        <span>اهداف انجمن ها</span>
+                    </h2>
+                    <div class="goles">
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="./img/icon/paper.svg" alt="" class="size-[70px]" />
+                            <b class="text-lg font-bold mb-4">اطلاع رسانی فعالیت انجمن ها</b>
+                            <p class="text-center text-sm">کمک به دانشکده در برگزاری جلسات معارفه،پرسش و پاسخ ، مراسم مرتبط با مناسبت ها ، برگزاری نمایشگاه های ترویجی و علمی ارکان وتشکیلات</p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="./img/icon/event.svg" alt="" class="size-[70px]" />
+                            <b class="text-lg font-bold mb-4">برگزاری رویداد ها و کارگاه های مختلف</b>
+                            <p class="text-center text-sm">
+                                برگزاری سمینار ها و کارگاه های علمی دانشگاهی ،منطقه ای،ملی و بین المللی برگزاری دوره های آموزشی تکمیلی و تقویتی و تشکیل کارگاههای تخصصی ، برنامه ریزی و اجرای بازدیدهای علمی از مراکز علمی ، صنعتی و
+                                فناوری
+                            </p>
+                        </div>
+                        <div class="flex flex-col justify-center items-center">
+                            <img src="./img/icon/students.svg" alt="" class="size-[70px]" />
+                            <b class="text-lg font-bold mb-4">ایجاد ارتباط بین دانشجویان و انجمن</b>
+                            <p class="text-center text-sm">حمایت و تشویق مادیی و معنوی از ابتکارات،خلاقیتهای علمی،فعالیتهای پژوهشی و اختراعات دانشجویان برگزاری نمایشگاه های ترویجی و علمی ارکان وتشکیلات</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="Banner" class="opacity-0 translate-y-20 transition-all duration-1000 ease-out scroll-trigger">
+                    <div class="flex flex-col lg:flex-row justify-self-center gap-x-20">
+                        <div class="order-2">
+                            <img src="./img/icon/neko.png" alt="بنر اصلی" class="size-96" />
+                        </div>
+                        <div class="flex flex-col justify-center text-white text-center p-4 order-1">
+                            <h2 class="text-2xl font-extrabold mb-5 animate-pulse-custom leading-tight">کامپیوتر کلاب و نیکوتک تقدیم میکنند</h2>
+                            <a href="" class="underline underline-offset-8">دانلود نشریه نیکوتک.</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="NewestEvents" class="bg-white p-6 rounded-xl shadow-2xl border border-gray-100 opacity-0 translate-y-20 transition-all duration-1000 ease-out scroll-trigger mx-auto xl:mx-[150px]">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center border-b-2 border-yellow-500 pb-4 flex justify-between items-center">
+                        <span>جدیدترین رویدادها</span>
+                        <a href="#" class="text-blue-600 text-base font-normal hover:underline flex items-center"> نمایش تمام رویدادها <i class="fas fa-arrow-left mr-2 text-sm"></i> </a>
+                    </h2>
+                    <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 Events">
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Events-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="p-5">
+                                <h3 class="text-xl font-bold mb-2 text-blue-700">کارگاه جامع برنامه‌نویسی پایتون</h3>
+                            </div>
+                            <div class="flex flex-col px-3 py-2 bg-gray-200">
+                                <div class="flex items-center justify-end text-gray-600 text-sm">
+                                    <div class="flex justify-center items-center">
+                                        <img src="./img/icon/time.svg" alt="Timer" class="size-4" />
+                                        <p class="text-sm font-semibold text-gray-800 mr-1" data-event-date="1403/04/01 10:00:00"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="NewestPost" class="bg-white p-6 rounded-xl shadow-2xl border border-gray-100 opacity-0 translate-y-20 transition-all duration-1000 ease-out scroll-trigger mx-auto xl:mx-[150px]">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center border-b-2 border-yellow-500 pb-4 flex justify-between items-center">
+                        <span>جدیدترین مقالات</span>
+                        <a href="#" class="text-blue-600 text-base font-normal hover:underline flex items-center"> نمایش تمام پست‌ها <i class="fas fa-arrow-left mr-2 text-sm"></i> </a>
+                    </h2>
+                    <div class="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 News">
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/6yMsFZIrNpVZ3C7GvBuz2Q3izFXyVa9c7gQNrtIJ.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/3EiqCs9SbHtRQHZTz3XVdToyMXOi1sEFKFbjCH9b.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/3y0mqf8uS9RrknSgl6c60d3xPHN8YhdLuNqiMSqs.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/4dnbjqgKYrrSoEpgDTzH55teOtTXWWAowuSbBLNM.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/7rtl11n1EY4IUeHC53L7YJhALQNXRD0CmbkY9Awl.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/9FPyHA194lhqRqersJGCaueVMJXx9ARcgRX0JuLo.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="News-item">
+                            <div class="relative">
+                                <div class="flex absolute top-1 left-1 gap-x-1">
+                                    <span class="bg-[#7209b7] rounded-md px-3 text-xs text-white">کامپیوتر</span>
+                                    <span class="bg-[#8b5cf6] rounded-md px-3 text-xs text-white">نشریه</span>
+                                </div>
+                                <img src="./img/9FPyHA194lhqRqersJGCaueVMJXx9ARcgRX0JuLo.jpg" alt="مقاله جدید" class="w-full h-48" />
+                            </div>
+                            <div class="flex flex-col p-5">
+                                <div>
+                                    <h3 class="text-md text-justify font-bold mb-2 text-gray-800">مقدمه‌ای بر بلاکچین و کاربردهای آن</h3>
+                                    <p class="grid grid-cols-1 md:grid-cols-2 gap-x-3">
+                                        <a class="text-blue-500 text-sm" href="">#آموزشی</a>
+                                        <a class="text-blue-500 text-sm" href="">#برنامه نویسی</a>
+                                        <a class="text-blue-500 text-sm" href="">#هوش مصنوعی</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col px-5 py-2 bg-gray-200">
+                                <div class="flex items-center justify-between text-gray-600 text-sm">
+                                    <div class="flex items-center">
+                                        <img src="./img/icon/fav.svg" alt="" class="size-4" />
+                                    </div>
+
+                                    <div class="flex gap-x-3">
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۵</span>
+                                            <i class="far fa-comment mr-1"></i>
+                                        </div>
+                                        <div class="flex items-center gax-x-1">
+                                            <span>۴۵</span>
+                                            <i class="far fa-heart mr-1 text-red-600"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="TopForums" class="bg-white p-6 rounded-xl shadow-2xl border border-gray-100 opacity-0 translate-y-20 transition-all duration-1000 ease-out scroll-trigger mx-auto xl:mx-[150px]">
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800 text-right border-b-2 border-yellow-500 pb-4">برترین تالارهای گفتگو</h2>
+                    <div class="flex items-center relative w-full overflow-hidden">
+                        <div id="gallery" class="flex items-center gap-4 whitespace-nowrap p-4 h-20">
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#8b5cf6] rounded-full size-4"></div>
+                                    <span>کامپیوتر</span>
+                                    <small>1723 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/gold.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ffae00] rounded-full size-4"></div>
+                                    <span>حقوق</span>
+                                    <small>756 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/silver.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#f0d400] rounded-full size-4"></div>
+                                    <span>روانشناسی</span>
+                                    <small>337 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/bronze.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff3700] rounded-full size-4"></div>
+                                    <span>زیست شناسی</span>
+                                    <small>306 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#14dba0] rounded-full size-4"></div>
+                                    <span>زبان</span>
+                                    <small>192 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#4bbd7b] rounded-full size-4"></div>
+                                    <span>معماری</span>
+                                    <small>62 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#0fb4eb] rounded-full size-4"></div>
+                                    <span>مدیریت بازرگانی</span>
+                                    <small>30 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#40403e] rounded-full size-4"></div>
+                                    <span>کانون نیکوتک</span>
+                                    <small>15 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#4d98ff] rounded-full size-4"></div>
+                                    <span>برق</span>
+                                    <small>12 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#88c45c] rounded-full size-4"></div>
+                                    <span>شیمی</span>
+                                    <small>10 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff6f00] rounded-full size-4"></div>
+                                    <span>علوم تربیتی</span>
+                                    <small>9 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff8800] rounded-full size-4"></div>
+                                    <span>مهندسی پزشکی</span>
+                                    <small>6 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#706aef] rounded-full size-4"></div>
+                                    <span>جغرافیا</span>
+                                    <small>2 کاربر</small>
+                                </div>
+                            </div>
+
+                            <!-- توهم ایجاد حرکت نا محدود -->
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#8b5cf6] rounded-full size-4"></div>
+                                    <span>کامپیوتر</span>
+                                    <small>1723 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/gold.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ffae00] rounded-full size-4"></div>
+                                    <span>حقوق</span>
+                                    <small>756 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/silver.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="relative flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#f0d400] rounded-full size-4"></div>
+                                    <span>روانشناسی</span>
+                                    <small>337 کاربر</small>
+                                </div>
+                                <img src="https://www.computer-club.ir/./storage/website/bronze.gif" alt="medal" class="absolute top-0 left-4 w-8 h-16 flex-shrink-0" />
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff3700] rounded-full size-4"></div>
+                                    <span>زیست شناسی</span>
+                                    <small>306 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#14dba0] rounded-full size-4"></div>
+                                    <span>زبان</span>
+                                    <small>192 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#4bbd7b] rounded-full size-4"></div>
+                                    <span>معماری</span>
+                                    <small>62 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#0fb4eb] rounded-full size-4"></div>
+                                    <span>مدیریت بازرگانی</span>
+                                    <small>30 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#40403e] rounded-full size-4"></div>
+                                    <span>کانون نیکوتک</span>
+                                    <small>15 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#4d98ff] rounded-full size-4"></div>
+                                    <span>برق</span>
+                                    <small>12 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#88c45c] rounded-full size-4"></div>
+                                    <span>شیمی</span>
+                                    <small>10 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff6f00] rounded-full size-4"></div>
+                                    <span>علوم تربیتی</span>
+                                    <small>9 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#ff8800] rounded-full size-4"></div>
+                                    <span>مهندسی پزشکی</span>
+                                    <small>6 کاربر</small>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex items-center snap-start w-[250px] bg-blue-100 p-4 rounded-lg h-16 flex-shrink-0">
+                                <div class="flex gap-x-1 p-6 items-center">
+                                    <div class="bg-[#706aef] rounded-full size-4"></div>
+                                    <span>جغرافیا</span>
+                                    <small>2 کاربر</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="Footer" class="bg-gray-900 text-white py-10 px-4 md:px-8 mt-12 rounded-t-xl shadow-inner">
+                <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    <div class="col-span-1">
+                        <h3 class="text-2xl font-bold mb-5 text-yellow-400 border-b border-yellow-600 pb-2">لینک های سریع</h3>
+                        <ul class="space-y-3 text-base">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-angle-left ml-2"></i>صفحه اصلی</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-angle-left ml-2"></i>مقالات</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-angle-left ml-2"></i>رویداد ها</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-angle-left ml-2"></i>درباره ما</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fas fa-angle-left ml-2"></i>قوانین</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2">
+                        <h3 class="text-2xl font-bold mb-5 text-yellow-400 border-b border-yellow-600 pb-2">انجمن های علمی دانشجویی</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            انجمن های علمی از بدو تاسیس خود به مرکزی برای پرورش استعدادهای علمی،مدیریتی ،تقویت نشاط علمی و اجرای برنامه های تکمیلی همسو با آموزش های دانشگاهی تبدیل شده است.در حال حاضر 16 انجمن علمی در دانشگاه آزاد
+                            اسلامی واحد اسلامشهر وجود دارد که زیر نظر باشگاه پژوهشگران جوان و نخبگان دانشگاه مشغول فعالیت هستند و از حمایت های مادی و معنوی این معاونت برخوردار می باشند. نتیجه اعتماد به دانشجویان و زمینه سازی برای
+                            شکوفاشدن استعدادهای آن ها،برجای ماندن آثاری ارزشمند در زمینه های علمی،فرهنگی و اجتماعی بوده است....
+                        </p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <h3 class="text-2xl font-bold mb-5 text-yellow-400 border-b border-yellow-600 pb-2">انجمن ها</h3>
+                        <div class="flex flex-wrap gap-x-2">
+                            <a href="#computer" class="px-3 text-white rounded-md my-1" style="background-color: #8b5cf6">کامپیوتر</a>
+                            <a href="#geography" class="px-3 text-white rounded-md my-1" style="background-color: #706aef">جغرافیا</a>
+                            <a href="#electrical" class="px-3 text-white rounded-md my-1" style="background-color: #4d98ff">برق</a>
+                            <a href="#business-management" class="px-3 text-white rounded-md my-1" style="background-color: #0fb4eb">مدیریت بازرگانی</a>
+                            <a href="#english-language" class="px-3 text-white rounded-md my-1" style="background-color: #14dba0">زبان</a>
+                            <a href="#architecture" class="px-3 text-white rounded-md my-1" style="background-color: #4bbd7b">معماری</a>
+                            <a href="#chemistry" class="px-3 text-white rounded-md my-1" style="background-color: #88c45c">شیمی</a>
+                            <a href="#psychology" class="px-3 text-white rounded-md my-1" style="background-color: #f0d400">روانشناسی</a>
+                            <a href="#law" class="px-3 text-white rounded-md my-1" style="background-color: #ffae00">حقوق</a>
+                            <a href="#biomedica-engineering" class="px-3 text-white rounded-md my-1" style="background-color: #ff8800">مهندسی پزشکی</a>
+                            <a href="#educational-science" class="px-3 text-white rounded-md my-1" style="background-color: #ff6f00">علوم تربیتی</a>
+                            <a href="#biology" class="px-3 text-white rounded-md my-1" style="background-color: #ff3700">زیست شناسی</a>
+                            <a href="#nekotech" class="px-3 text-white rounded-md my-1" style="background-color: #40403e">کانون نیکوتک</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-gray-500 text-md my-4 pt-6 border-t border-gray-700">&copy; ۱۴۰۳ تمامی حقوق محفوظ است. طراحی و توسعه توسط انجمن‌های علمی.</div>
+                <p class="text-sm text-gray-300 flex items-center justify-center"><a href="https://hrrp.ir" title="وبسايت سخصي حميدرضا رضايي">توسعه يافته توسط : حميدرضا رضایی (وبسایت)</a></p>
+            </footer>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const hamburgerButton = document.getElementById('hamburger-button');
+                const mobileNav = document.getElementById('mobile-nav');
+                if (hamburgerButton && mobileNav) {
+                    hamburgerButton.addEventListener('click', () => {
+                        mobileNav.classList.toggle('hidden');
+                        const icon = hamburgerButton.querySelector('i');
+                        if (mobileNav.classList.contains('hidden')) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        } else {
+                            icon.classList.remove('fa-bars');
+                            icon.classList.add('fa-times');
+                        }
+                    });
+                }
+
+                function convertPersianToGregorian(persianDateStr) {
+                    const [datePart, timePart] = persianDateStr.split(' ');
+                    const [yearFa, monthFa, dayFa] = datePart.split('/').map(Number);
+                    const [hour, minute, second] = timePart.split(':').map(Number);
+                    let gregorianYear = yearFa + 621;
+                    let gregorianMonth = monthFa - 1;
+                    let gregorianDay = dayFa;
+
+                    return new Date(gregorianYear, gregorianMonth, gregorianDay, hour, minute, second);
+                }
+
+                function updateEventTimers() {
+                    document.querySelectorAll('[data-event-date]').forEach((element) => {
+                        const eventDateStr = element.dataset.eventDate;
+                        const eventDateTime = convertPersianToGregorian(eventDateStr);
+
+                        const now = new Date();
+                        const timeLeft = eventDateTime.getTime() - now.getTime(); // Time in milliseconds
+
+                        if (timeLeft <= 0) {
+                            element.textContent = 'دوره پایان یافته است';
+                            element.classList.add('text-red-600');
+                            element.classList.remove('text-gray-800');
+                        } else {
+                            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                            element.textContent = `زمان باقی‌مانده: ${days} روز، ${hours} ساعت، ${minutes} دقیقه، ${seconds} ثانیه`;
+                            element.classList.remove('text-red-600');
+                            element.classList.add('text-gray-800');
+                        }
+                    });
+                }
+
+                setInterval(updateEventTimers, 1000);
+                updateEventTimers();
+            });
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.remove('opacity-0', 'translate-y-20');
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                        }
+                    });
+                },
+                {threshold: 0.1}
+            );
+
+            document.querySelectorAll('.scroll-trigger').forEach((el) => {
+                observer.observe(el);
+            });
+        </script>
+    </body>
+</html>

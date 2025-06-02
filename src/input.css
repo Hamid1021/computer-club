@@ -1,5 +1,135 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-xs: 500px;
+    --breakpoint-2xs: 360px;
+    --breakpoint-3xs: 285.71px;
+
+    /* Animation definitions */
+    --animate-spin: spin 3s linear infinite;
+    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-bounce: bounce 1s infinite;
+    --animate-fade-in: fade-in 3s ease-in-out infinite;
+    --animate-fade-out: fade-out 3s ease-out infinite;
+    --animate-fade-in-down: fade-in-down 3s ease-in infinite;
+    --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+    --animate-fade-in-left: fade-in-left 3s ease-in-out infinite;
+    --animate-fade-in-right: fade-in-right 3s ease-in-out infinite;
+    --animate-fade-out-down: fade-out-down 3s ease-in-out infinite;
+    --animate-fade-out-up: fade-out-up 3s ease-in-out infinite;
+    --animate-fade-out-left: fade-out-left 3s ease-in-out infinite;
+    --animate-fade-out-right: fade-out-right 3s ease-in-out infinite;
+    --animate-fade-out-top-left: fade-out-top-left 3s ease-in-out infinite;
+    --animate-fade-out-top-right: fade-out-top-right 3s ease-in-out infinite;
+    --animate-marquee: marquee 4s linear infinite;
+    --animate-pause: paused;
+    --animate-diagonal-light: diagonal-light 5s infinite;
+    --animate-pulse-custom: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    --animate-bounce-slow: bounce-slow 3s ease-in-out infinite;
+
+  @keyframes diagonal-light {
+    0% { transform: translateX(100%) rotate(15deg); opacity: 1; }
+    28.57% { transform: translateX(-15800%) rotate(15deg); opacity: 0; }
+    100% { transform: translateX(-100%) rotate(15deg); opacity: 0; }
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-200%); }
+  }
+  
+  @keyframes spin {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+  }
+  
+  @keyframes ping {
+    0% { transform: scale(1); opacity: 1; }
+    75%, 100% { transform: scale(2); opacity: 0; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-25%); }
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translate3d(0, -100%, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  
+  @keyframes fade-in-up {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-left {
+    0% { opacity: 0; transform: translate3d(-100%, 0, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  
+  @keyframes fade-in-right {
+    0% { opacity: 0; transform: translate3d(100%, 0, 0); }
+    100% { opacity: 1; transform: translate3d(0, 0, 0); }
+  }
+  
+  @keyframes fade-out-down {
+    0% { opacity: 1; }
+    100% { opacity: 0; transform: translate3d(0, 100%, 0); }
+  }
+  
+  @keyframes fade-out-up {
+    0% { opacity: 1; }
+    100% { opacity: 0; transform: translate3d(0, -100%, 0); }
+  }
+  
+  @keyframes fade-out-left {
+    0% { opacity: 1; transform: translate3d(0, 0, 0); }
+    100% { opacity: 0; transform: translate3d(-100%, 0, 0); }
+  }
+  
+  @keyframes fade-out-right {
+    0% { opacity: 1; transform: translate3d(0, 0, 0); }
+    100% { opacity: 0; transform: translate3d(100%, 0, 0); }
+  }
+  
+  @keyframes fade-out-top-left {
+    0% { opacity: 1; transform: translate3d(0, 0, 0); }
+    100% { opacity: 0; transform: translate3d(-100%, -100%, 0); }
+  }
+  
+  @keyframes fade-out-top-right {
+    0% { opacity: 1; transform: translate3d(0, 0, 0); }
+    100% { opacity: 0; transform: translate3d(100%, -100%, 0); }
+  }
+  
+  @keyframes pulse-custom {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+  }
+  
+  @keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+}
+
 body {
     font-family: "Inter", sans-serif;
     background-color: #f0f2f5; /* Light gray background */
@@ -20,6 +150,23 @@ body {
     background: #555;
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+#gallery {
+    animation: scroll 40s linear infinite;
+}
+
+#gallery:hover {
+    animation-direction: reverse;
+}
+
 
 #ScientificAssociations .scientific-associations-item {
     @apply flex justify-center text-white p-5 rounded-lg text-center shadow-lg hover:shadow-xl transition-all duration-300
@@ -31,7 +178,7 @@ body {
 }
 
 .ScientificAssociations {
-    @apply bg-white p-6 rounded-xl shadow-2xl border border-gray-100 mx-auto xl:mx-[150px];
+    @apply bg-white p-6 rounded-xl shadow-2xl border border-gray-100 mx-0 xl:mx-[150px];
 }
 
 #header {
@@ -70,4 +217,14 @@ body {
 
 #Banner {
     @apply bg-[#212529] rounded-xl shadow-2xl overflow-hidden mx-auto xl:mx-[150px]
+}
+
+#NewestPost .News .News-item{
+    @apply flex flex-col border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl
+    transition-all duration-300 transform hover:-translate-y-1 bg-white justify-between
+}
+
+#NewestEvents .Events .Events-item{
+    @apply flex flex-col border border-gray-200 rounded-lg overflow-hidden
+    shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 bg-white
 }
